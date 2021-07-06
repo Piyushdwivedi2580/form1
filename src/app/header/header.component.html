@@ -1,0 +1,23 @@
+<p> {{address}} </p>
+<table>
+    <thead>
+      <tr>
+        <th>Sr. no </th>
+        <th>albumId</th>
+        <th>title</th>
+        <th>url</th>
+        <th>thumbnailUrl</th>
+        <th>Photo</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let item of photo">
+           <td> {{item.id}} </td>
+           <td> {{item.albumId}} </td>
+           <td> {{item.title}} </td>
+           <td> {{item.url}} </td>
+           <td> {{item.thumbnailUrl}} </td>
+           <td> <img src='{{item.thumbnailUrl}}' alt="photo"> </td>
+       </tr>
+    </tbody>
+  </table>
